@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TableRow-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/Texttable"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="Row 3 Column 1"-->
+<!--        android:background="#404343"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="20dp"-->
+<!--        android:textColor="@color/colorAccent"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/Texttable2"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="Row 3 Column 2"-->
+<!--        android:background="#1D2323"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="20dp"-->
+<!--        android:textColor="@color/colorAccent"/>-->
+
+<!--</TableRow>-->
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:background="#0BC1B0">
+        <TextView
+            android:layout_column="1"
+            android:text="Open..."
+            android:padding="8dp"/>
+        <TextView
+            android:text="Ctrl-O"
+            android:gravity="right"
+            android:padding="8dp"/>
+    </TableRow>
+    <TableRow
+        android:background="#46A89F">
+        <TextView
+            android:layout_column="1"
+            android:text="Save..."
+            android:padding="8dp"/>
+        <TextView
+            android:text="Ctrl-S"
+            android:gravity="right"
+            android:padding="8dp"/>
+    </TableRow>
+    <TableRow
+        android:background="#84C6C0">
+        <TextView
+            android:layout_column="1"
+            android:text="Save As..."
+            android:padding="8dp"/>
+        <TextView
+            android:text="Ctrl-Shift-S"
+            android:gravity="right"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dp"
+        android:background="#F41807"/>
+
+    <TableRow
+        android:background="#82B5B0">
+        <TextView
+            android:text="X"
+            android:padding="8dp"/>
+        <TextView
+            android:text="Export..."
+            android:padding="8dp"/>
+        <TextView
+            android:text="Ctrl-E"
+            android:gravity="right"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dp"
+        android:background="#F41807"/>
+
+    <TableRow
+        android:background="#A4B1B0">
+        <TextView
+            android:layout_column="1"
+            android:text="Quit"
+            android:padding="8dp"/>
+    </TableRow>
+
+</TableLayout>
