@@ -43,4 +43,5 @@
         android:layout_toRightOf="@+id/imageView"
         android:background="#FF0000"
         android:text="Delete" />
+
 </RelativeLayout>
