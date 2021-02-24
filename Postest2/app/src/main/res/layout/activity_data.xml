@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textSize="18dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/judul"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/edit_txt_bg"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Deskripsi"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="20dp"/>
+        <EditText
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_txt_bg"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:text="Submit"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>
