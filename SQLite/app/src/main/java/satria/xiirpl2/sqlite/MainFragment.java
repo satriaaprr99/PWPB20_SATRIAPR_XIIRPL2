@@ -19,13 +19,11 @@ import java.util.List;
 
 public class MainFragment extends Fragment implements View.OnClickListener,RecyclerviewAdapter.OnUserClickListener{
     RecyclerView recyclerView;
-    EditText edtName,edtAge; Button btnSubmit;
-    RecyclerView.LayoutManager layoutManager; Context context;
+    EditText edtName,edtAge;
+    Button btnSubmit;
+    RecyclerView.LayoutManager layoutManager;
+    Context context;
     List<PersonBean> listPersonInfo;
-
-    public MainFragment() {
-        // Required empty public constructor
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -70,8 +68,10 @@ public class MainFragment extends Fragment implements View.OnClickListener,Recyc
                 currentPerson.setAge(Integer.parseInt(edtAge.getText().toString()));
                 db.update(currentPerson);
             }
-            setupRecyclerView(); edtName.setText("");
-            edtAge.setText(""); edtName.setFocusable(true);
+            setupRecyclerView();
+            edtName.setText("");
+            edtAge.setText("");
+            edtName.setFocusable(true);
             btnSubmit.setText("Submit");
 
         }
